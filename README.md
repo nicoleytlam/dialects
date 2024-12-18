@@ -1,5 +1,5 @@
 # Evaluating LLMs’ Grammatical Comprehension  Across Dialects
-## LING 380/780: Topics in Computational Linguistics: Neural Network Models of Linguistic Structure
+## Fall 2024: LING 380/780: Topics in Computational Linguistics: Neural Network Models of Linguistic Structure
 ### By Nicole Lam and Katelyn DeKeersgieter
 
 This repository provides a Seq2Seq model tools to analyze LLM's grammatical comprehension of different English dialects. It includes data preprocessing, model training, evaluation, and simulation scripts.
