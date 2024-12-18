@@ -15,6 +15,7 @@ This repository provides a Seq2Seq model tools to analyze LLM's grammatical comp
   - **`train.py`**: Main script for training models.
   - **`simulation.ipynb`**: **Central file for running the model and generating results.** (See below for more details.)
   - **`_utils.py`**: Additional utility functions for internal usage.
+  - **`accuracy.csv`**: Saves all validation and test accuracies from each trial during training
 
 - **`data/`**: Dataset files.
   - `*.csv`: CSV files for training, validation, and testing.
@@ -66,8 +67,9 @@ The `simulation.ipynb` file serves as the **primary interface for running models
    - Preprocesses and tokenizes the data for the model.
 
 3. **Model Execution**:
-   - Runs the Seq2seq model with 3 sets of different parameters (models A, B, C).
-   - Saves the model trained on various datasets in specific `*.pt` files.
+   - Runs the Seq2seq models with 3 sets of different parameters (models A, B, C) each 50 times (total of 450 trials)
+   - Saves the model trained on 3 datasets in specific `*.pt` files.
+   - All validation and test accuracy results saved in `accuracy.csv`
 
 4. **Simulation Scenarios**:
    - Allows the user to test specific dialect test-scenarios (e.g., comparing AAVE and standard English outputs) and evaluate their accuracy based on three different models
