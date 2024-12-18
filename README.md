@@ -22,9 +22,9 @@ This repository provides a Seq2Seq model tools to analyze LLM's grammatical comp
 
 - **`.git/`**: Git metadata.
 - **Output Files**:
-- `aave_A.pt`, `aave_B.pt`, `aave_C.pt`: Models trained on African American Vernacular English (AAVE) data.
-- `standard_A.pt`, `standard_B.pt`, `standard_C.pt`: Models trained on Standard American English data.
-- `mix_A.pt`, `mix_B.pt`, `mix_C.pt`: Models trained on mixed dialect (AAVE + SAE) data.
+  - `aave_A.pt`, `aave_B.pt`, `aave_C.pt`: Models trained on African American Vernacular English (AAVE) data.
+  - `standard_A.pt`, `standard_B.pt`, `standard_C.pt`: Models trained on Standard American English data.
+  - `mix_A.pt`, `mix_B.pt`, `mix_C.pt`: Models trained on mixed dialect (AAVE + SAE) data.
 
 ## Getting Started
 
