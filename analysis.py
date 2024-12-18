@@ -5,13 +5,12 @@ import csv
 import pandas as pd
 import seaborn as sns
 
-def plot_filtered_validation_and_test_accuracy(csv_file='accuracy.csv', dataset='standard', config='B'):
+def plot_filtered_validation_and_test_accuracy(dataset, config):
     """
     Filters the dataset by the first and second columns and plots the distribution 
     of validation accuracy for each of the four epochs and the final test accuracy.
     
     Parameters:
-    - csv_file: str, path to the CSV file
     - dataset: value to filter the first column
     - config: value to filter the second column
     
@@ -19,14 +18,11 @@ def plot_filtered_validation_and_test_accuracy(csv_file='accuracy.csv', dataset=
     - None
     """
     # Read the CSV file
-    data = pd.read_csv(csv_file)
-    
-    # Ensure the file has at least two columns for filtering
-    if data.shape[1] < 2:
-        raise ValueError("The CSV file does not have enough columns for filtering.")
-    
+    data = pd.read_csv('accuracy.csv')
+    print(dataset)
+    print(config)
     # Filter the dataset based on the first and second columns
-    filtered_data = data[(data.iloc[:, 0] == dataset) & (data.iloc[:, 1] == config)]
+    filtered_data = data[(data['dataset'] == dataset) & (data['config'] == config)]
     
     # Ensure there is data left after filtering
     if filtered_data.empty:
