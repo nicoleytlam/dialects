@@ -5,7 +5,8 @@
 This repository provides a Seq2Seq model tools to analyze LLM's grammatical comprehension of different English dialects. It includes data preprocessing, model training, evaluation, and simulation scripts.
 
 ## Directory Structure
-
+- **`report.pdf`** and **`slides.pdf`** are the associated slides and report used for this project.
+- 
 - **`dialects/`**: Main directory containing the code and resources.
   - **`metrics.py`**: Scripts for calculating model performance metrics.
   - **`analysis.py`**: Tools for in-depth analysis of model outputs.
